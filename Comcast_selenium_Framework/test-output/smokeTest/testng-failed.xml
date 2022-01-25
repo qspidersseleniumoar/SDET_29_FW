@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [smokeTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test-Runner-1(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.crm.comcast.contacttest.ContactTest">
+        <methods>
+          <include name="createconatctTest"/>
+        </methods>
+      </class> <!-- com.crm.comcast.contacttest.ContactTest -->
+      <class name="com.crm.comcast.orgTest.OrganizationTest">
+        <methods>
+          <include name="createOrgtest"/>
+        </methods>
+      </class> <!-- com.crm.comcast.orgTest.OrganizationTest -->
+    </classes>
+  </test> <!-- Test-Runner-1(failed) -->
+</suite> <!-- Failed suite [smokeTest] -->
