@@ -18,6 +18,11 @@ import io.restassured.response.Response;
 
 
 public class GraphQLmethods {
+	
+	GraphQlPojo q=new GraphQlPojo();
+	String token="Bearer "+GraphQLmethods.jwtgen();
+	//String token="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiOWFhMjAxYy1hMzNhLTNjZGUtYjA0MC1lZDM3NTVlNmJiNDUiLCJhY2NvdW50SWQiOiI2MWZhYzI0Yzg0NWQ2NzAwNzFmMzRkMzgiLCJpc1hlYSI6ZmFsc2UsImlhdCI6MTY0NjA2NjU5OCwiZXhwIjoxNjQ2MTUyOTk4LCJhdWQiOiI0N0E0MTc3MDdBNUU0QkYwOTU4MEUyM0JCRTcwMDdGNCIsImlzcyI6ImNvbS54cGFuZGl0LnBsdWdpbnMueHJheSIsInN1YiI6IjQ3QTQxNzcwN0E1RTRCRjA5NTgwRTIzQkJFNzAwN0Y0In0.NLvwojeNWBMgdr6TnEDTU17ht0WUL4B_XYwl1VlyuzM";
+
 
 	/**
 	 * JWT Token Generator
@@ -38,9 +43,6 @@ public class GraphQLmethods {
 		return jwtToken;
 	}
 
-	GraphQlPojo q=new GraphQlPojo();
-	String token="Bearer "+GraphQLmethods.jwtgen();
-	//String token="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiOWFhMjAxYy1hMzNhLTNjZGUtYjA0MC1lZDM3NTVlNmJiNDUiLCJhY2NvdW50SWQiOiI2MWZhYzI0Yzg0NWQ2NzAwNzFmMzRkMzgiLCJpc1hlYSI6ZmFsc2UsImlhdCI6MTY0NjA2NjU5OCwiZXhwIjoxNjQ2MTUyOTk4LCJhdWQiOiI0N0E0MTc3MDdBNUU0QkYwOTU4MEUyM0JCRTcwMDdGNCIsImlzcyI6ImNvbS54cGFuZGl0LnBsdWdpbnMueHJheSIsInN1YiI6IjQ3QTQxNzcwN0E1RTRCRjA5NTgwRTIzQkJFNzAwN0Y0In0.NLvwojeNWBMgdr6TnEDTU17ht0WUL4B_XYwl1VlyuzM";
 
 	/**
 	 * Post
