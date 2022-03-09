@@ -1,5 +1,7 @@
 package com.crm.comcast.genericutility;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -48,6 +50,7 @@ public class BaseAnnoationClass {
 	     }else if(BROWSER.equals("ie")) {
 	    	  driver = new InternetExplorerDriver();
 	     }
+	     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	     driver.get(URL);
 	     sDriver = driver;
 	}
