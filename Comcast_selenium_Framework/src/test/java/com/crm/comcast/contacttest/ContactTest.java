@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -25,11 +26,11 @@ import com.crm.comcast.objectrepositorylib.Home;
 import com.crm.comcast.objectrepositorylib.Login;
 import com.crm.comcast.objectrepositorylib.OrganizationInformation;
 import com.crm.comcast.objectrepositorylib.Organizations;
-
+@Listeners(com.crm.comcast.genericutility.ListenerImplementation.class)
 public class ContactTest extends BaseAnnoationClass{
 	
 	@Test(groups = "smokeTest" , priority = 1)
-	public void createconatctTest() throws Throwable {
+	public void createContact() throws Throwable {
 		/*read test data from Excel File*/
 		String lastName = eLib.getDataFromExcel("contact", 1, 10) +jlib.getRandomNumber() ;		
 		/*step 2 : Navigate to Contact Page*/
