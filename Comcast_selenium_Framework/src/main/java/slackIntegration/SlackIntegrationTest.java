@@ -10,9 +10,9 @@ import com.github.seratch.jslack.api.webhook.WebhookResponse;
 public class SlackIntegrationTest {
     //https://hooks.slack.com/services/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"
 
-		private static String urlSlackWebHook = "https://hooks.slack.com/services/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";
+		private static String urlSlackWebHook = "https://hooks.slack.com/services/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";
 		private static String channelName = "testing";
-		private static String botUserOAuthAccessToken = "xoxb-3236780453760-3236818593392-IIiJsBFVCoySpX309boJZzeh";
+		private static String botUserOAuthAccessToken = "xoxb-3236780453760-3236818593392-RVbojBf887sIWGv6aDnx4kET";
 		
 		
 			public void sendTestExecutionStatusToSlack(String message) throws Exception {
